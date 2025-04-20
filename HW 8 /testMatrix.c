@@ -80,10 +80,6 @@ void printMatrix(Matrix theMatrix) {
     }
 }
 // Testing Purposes
-// Getter
-int getData(Matrix m, int row, int col) {
-    return m.m_data[row][col];
-}
 // Setter
 void setData(Matrix* m, int row, int col, int value) {
     m->m_data[row][col] = value;
