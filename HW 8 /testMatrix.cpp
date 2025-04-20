@@ -68,10 +68,6 @@ void Matrix::print() const {
     }
 }
 // Testing Purposes
-// Getter
-int Matrix::getData(int rows, int cols) const {
-    return m_data[rows][cols];
-}
 // Setter
 void Matrix::setData(int rows, int cols, int value) {
     m_data[rows][cols] = value;
