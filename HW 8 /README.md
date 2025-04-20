@@ -1,11 +1,9 @@
 ## Savannah Sesum (UMBC/313/ 7:44PM 4-16-25)
 ### Purpose of Software -------- 
-To mimic the formula of "D = A + (3 * B) x C^T".
-It will produce 4 matrices in total, showing each 4 matrices + the tranpose of C before showing the final 
-evaluation D.
-But then, the user can implement their own dimensions and values for the 3 matrices.
-The program will then automatically evaluate into the final matrix, similar to how D was, using
-the same formula.
+To mimic the formula of "D = A + (3 * B) x C^T". <br>
+It will produce 5 matrices in total, showing each 3 matrices + the tranpose of C + the final evaluation. <br>
+The user will have to implement HW 8 / their own dimensions and values for the 3 matrices A, B and C. <br>
+The program will then automatically evaluate into the final matrix using the same formula.
 
 ### Files --------
 **README.md -** The file that explains this submission for HW 8 <br>
