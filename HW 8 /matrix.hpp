@@ -22,8 +22,6 @@ public:
     // Printer
     void print() const;
     // For testing purposes
-    // Getter
-    int getData(int rows, int cols) const;
     // Setter
     void setData(int rows, int cols, int value);
 private:
