@@ -22,8 +22,6 @@ Matrix scaleMatrix(Matrix theMatrix, int scalar);
 // Printer
 void printMatrix(Matrix theMatrix);
 // For testing purposes
-// Getter
-int getData(Matrix theMatrix, int row, int col);
 // Setter
 void setData(Matrix* theMatrix, int row, int col, int value);
 #endif
