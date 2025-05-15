@@ -3,7 +3,7 @@ section .data
     inputBuf: db 0x83,0x6A,0x88,0xDE,0x9A,0xC3,0x54,0x9A ; setting up array of hex values for input
 
 section .bss
-    outputBuf: resb 25 ; reserve 25 bytes in the outputBuf array, including whitespaces and newline
+    outputBuf: resb 80 ; reserve 80 bytes
 
 section .text
     global _start ; initiate special _start label
@@ -34,10 +34,13 @@ _start:
 
 .print:
     mov byte [outputBuf + edi], 0Ah ; put newline at the end of outputBuf array
+    inc edi
+    mov byte [outputBuf + edi], 0Ah ; put newline again for terminal printing
+    inc edi
+    mov eax, 4 ; SYS_WRITE the opcode 4
     mov ebx, 1 ; write to the STDOUT file
     mov ecx, outputBuf ; the message to write
-    mov eax, 4 ; SYS_WRITE the opcode 4
-    mov edx, 25 ; memory for each ASCII character + whitespaces + newline
+    mov edx, edi ; memory for each ASCII character + whitespaces + newline
     int 80h
     call .exit ; finish up
 
